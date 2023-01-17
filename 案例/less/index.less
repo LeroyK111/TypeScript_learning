@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+// 以上时初始化
+body {
+  background-color: #f6c793;
+  opacity: 0.8;
+}
+
+header {
+  width: 400px;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+}
+
+#start {
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+// 以下是九宫
+
+article {
+  position: relative;
+  width: 900px;
+  height: 900px;
+  background-color: skyblue;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #ccc;
+  transition: all 0.3;
+}
+
+// 定义一个x|o棋子样式
+.o {
+  width: 200px;
+  height: 200px;
+  background: url("../imgs/圈.svg") no-repeat;
+}
+
+.x {
+  width: 200px;
+  height: 200px;
+  background: url("../imgs/叉.svg") no-repeat;
+}
+
+// 遮罩层
+.game-message {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 900px;
+  background-color: rgba(128, 128, 128, 0.6);
+}
+
+.game-message p {
+  display: block;
+  margin: 234px auto 0;
+  text-align: center;
+  font-size: 150px;
+  font-weight: bold;
+  color: red;
+}
+
+.game-message button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.8);
+  border: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <header><h1>九宫格</h1></header>
+  <button id="start">开始游戏</button>
+  <article>
+    <ul id="bord" class="game">
+      <li data-index="0"><div class="o"></div></li>
+      <li data-index="1"><div></div></li>
+      <li data-index="2"><div></div></li>
+      <li data-index="3"><div></div></li>
+      <li data-index="4"><div></div></li>
+      <li data-index="5"><div></div></li>
+      <li data-index="6"><div></div></li>
+      <li data-index="7"><div></div></li>
+      <li data-index="8"><div class="x"></div></li>
+    </ul>
+    <div class="game-message" id="message">
+      <p id="winner">X 赢了</p>
+      <button id="restart">点我重新开始</button>
+    </div>
+  </article>
+</body>
+<script src="../js/index.js"></script>
+</html>
