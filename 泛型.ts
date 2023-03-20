@@ -1,7 +1,7 @@
 /**
  * @author Leroy
  * !泛型（Generics）是指在定义函数、接口或类的时候，不预先指定具体的类型，而在使用的时候再指定类型的一种特性。
- * !这就是自己定义自己。。。
+ * !这就是自己定义自己。。。T、U、V常用
  */
 
 function createArray<T>(length: number, value: T): Array<T> {

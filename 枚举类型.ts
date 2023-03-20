@@ -22,6 +22,7 @@ console.log(Player.Num1);
 
 // 纯数字枚举，可以反向映射
 var Role;
+
 (function (Role) {
   Role[(Role["Reporter"] = 1)] = "Reporter";
   Role[(Role["Developer"] = 2)] = "Developer";
@@ -30,7 +31,6 @@ var Role;
   Role[(Role["Guest"] = 5)] = "Guest";
 })(Role || (Role = {}));
 
-
 // 使用变量声明
 declare enum Month {
   Jan,
@@ -38,3 +38,9 @@ declare enum Month {
   Mar,
 }
 let month = [Month.Jan, Month.Feb, Month.Mar];
+
+
+// 同时使用调用签名和构造签名
+declare var Date: DateConstructor;
+
+

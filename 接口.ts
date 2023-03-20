@@ -42,3 +42,5 @@ let p1: User = {
 console.log(p1);
 
 // console.log(p1.func());
+
+

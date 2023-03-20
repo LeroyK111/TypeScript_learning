@@ -6,3 +6,5 @@ let b: number = 123;
 let Data: data = {
   a: 1,
 };
+
+

@@ -138,3 +138,10 @@ if (isJava(lang)) {
 } else {
   lang?.helloJavaScript();
 }
+
+
+// 箭头函数
+type LogFn = (msg: string) => void;
+const log: LogFn = (msg: string) => {
+  console.log(msg);
+};

@@ -120,6 +120,7 @@ interface F1 {
   eat(): void;
 }
 
+// 类接口
 class Cat2 implements F, F1 {
   // 这个还要定义到这里
   public name;
