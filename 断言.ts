@@ -62,3 +62,11 @@ let obj321: {
     };
   };
 };
+
+// !断言可以直接写在接口上
+type HasNames = { names: readonly string[] };
+function getNamesExactly<const T extends HasNames>(arg: T): T["names"] {
+  return arg.names;
+}
+
+const names = getNamesExactly({ names: ["Alice", "Bob", "Eve"] });

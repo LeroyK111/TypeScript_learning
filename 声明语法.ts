@@ -25,9 +25,9 @@ type GreetingSettings = {
 
 interface demo {}
 
-declare function greet(setting: GreetingSettings): void;
+declare function greet1(setting: GreetingSettings): void;
 
-greet({
+greet1({
   greeting: "hello world",
   duration: 4000,
 });

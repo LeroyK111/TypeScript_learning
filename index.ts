@@ -7,4 +7,4 @@ let Data: data = {
   a: 1,
 };
 
-
+console.log(Data);

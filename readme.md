@@ -18,8 +18,10 @@
 
 https://www.npmjs.com/package/typescript
 
-```
+```shell
 $ npm i -g typescript
+# ts直接转化js
+$ tsc --help
 ```
 
 合并转换工具
