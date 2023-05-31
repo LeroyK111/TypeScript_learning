@@ -7,7 +7,10 @@
 // 普通函数
 function loggedMethod<This, Args extends any[], Return>(
   originalMethod: (this: This, ...args: Args) => Return,
-  _context: ClassMethodDecoratorContext<This, (this: This, ...args: Args) => Return>
+  _context: ClassMethodDecoratorContext<
+    This,
+    (this: This, ...args: Args) => Return
+  >
 ) {
   console.log(originalMethod, "\n", _context);
 
