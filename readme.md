@@ -86,6 +86,17 @@ TIP
 
 [@types](https://www.npmjs.com/~types) 下面的包是从 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) 里自动发布的，通过 [types-publisher](https://github.com/Microsoft/types-publisher) 工具。 如果想让你的包发布为@types包，提交一个pull request到 https://github.com/DefinitelyTyped/DefinitelyTyped。 在这里查看详细信息 [contribution guidelines page](http://definitelytyped.org/guides/contributing.html)。
 
+## 开启严格模式
+```
+
+{
+ “compilerOptions”: {
+ “strict”: true
+ }
+}
+```
+
+
 ## tsconfig.json配置
 
 ![image-20220925173743779](readme.assets/image-20220925173743779.png)
