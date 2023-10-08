@@ -70,3 +70,11 @@ function getNamesExactly<const T extends HasNames>(arg: T): T["names"] {
 }
 
 const names = getNamesExactly({ names: ["Alice", "Bob", "Eve"] });
+
+
+// 类型断言
+
+
+const unknownValue: unknown = "hello world";
+
+const stringValue: string = unknownValue as string;

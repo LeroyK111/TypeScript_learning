@@ -127,6 +127,7 @@ class JavaScript {
   javascript: any;
 }
 
+// is 直接确定接口类型 用户自定义保护函数
 function isJava(lang: Java | JavaScript): lang is Java {
   return (lang as Java).helloJava !== undefined;
 }

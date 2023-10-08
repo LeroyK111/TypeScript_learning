@@ -72,3 +72,8 @@ let objData: {} = { obj1: 1, ...{ obj: 2 } };
 
 // 打印
 console.log(age, num);
+
+
+function printPersonDetails({ name, age }: { name: string; age: number }) {
+  console.log(`Name: ${name}, Age: ${age}`);
+}
