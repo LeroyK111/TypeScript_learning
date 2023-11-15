@@ -35,6 +35,9 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
 }
 
 loggingIdentity({ length: 20, data: "2333" });
+// !条件判断关键词
+
+type ReturnType<T> = T extends () => infer R ? R : never
 
 // !约束嵌套...
 function copyFields<T extends U, U>(target: T, source: U): T {

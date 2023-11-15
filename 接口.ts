@@ -43,4 +43,10 @@ console.log(p1);
 
 // console.log(p1.func());
 
+// !接口合并
+type Name1 = 'Tom' | 'John' | 'Sim'
+type Name2 = 'Sim' | 'Aim'
+
+type ResName = Name1 & Name2 // type ResName = "Sim"
+
 

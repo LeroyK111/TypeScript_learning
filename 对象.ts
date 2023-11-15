@@ -1,3 +1,10 @@
+// !ECMAScript 标准内置对象：Boolean、Error、Date、RegExp等
+
+// !DOM 和 Bom：Document、HTMLElement、Event、NodeList等
+
+
+
+
 // 普通对象，等号和逗号分割
 let obj: object = {
   name: "leroy",
@@ -44,3 +51,11 @@ let person2: {
 };
 
 console.log(person);
+
+
+// !遍历，用于取联合类型的值，主要用于数组和对象的构造。不要用于 interface，否则会出错。
+type Name = 'Tom' | 'John' | 'Sim'
+
+type NameObj = {
+  [T in Name]: string
+}

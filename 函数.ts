@@ -146,3 +146,4 @@ type LogFn = (msg: string) => void;
 const log: LogFn = (msg: string) => {
   console.log(msg);
 };
+
