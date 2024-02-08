@@ -17,6 +17,9 @@ createArray<string>(3, "x"); // ['x', 'x', 'x']
 // 自动推断类型
 createArray(3, "x"); // ['x', 'x', 'x']
 
+
+
+
 // !多类型传参
 function swap<T, U>(tuple: [T, U]): [U, T] {
   return [tuple[1], tuple[0]];
@@ -35,9 +38,10 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
 }
 
 loggingIdentity({ length: 20, data: "2333" });
+
 // !条件判断关键词
 
-type ReturnType<T> = T extends () => infer R ? R : never
+type ReturnType<T> = T extends () => infer R ? R : never;
 
 // !约束嵌套...
 function copyFields<T extends U, U>(target: T, source: U): T {
@@ -92,5 +96,3 @@ log1.run(1); // 1
 
 let log2 = new Log3();
 log2.run("1"); // '1'
-
-
