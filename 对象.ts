@@ -25,6 +25,7 @@ let person: {
   age: number;
   // ？不定变量
   sayHi?: Function;
+
 };
 
 // 和注解相匹配

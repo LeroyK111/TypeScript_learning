@@ -10,7 +10,8 @@ interface rule {
   kexuan?: number;
   // !只读属性: readonly
   readonly onlyRead?: string;
-
+  // 非空断言
+  // client!: object;
 }
 
 interface User extends rule {
