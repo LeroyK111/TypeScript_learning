@@ -47,3 +47,39 @@ type T1 = TypeName<string>; // type T1 = "string"
 type T2 = TypeName<string[]>; // type T2 = "object"
 
 
+interface User {
+  id: number;
+  name: string;
+  age: number;
+}
+
+type UserPreview = Pick<User, 'id' | 'name'>;
+// { id: number; name: string }
+
+
+interface User {
+  id: number;
+  name: string;
+  password: string;
+}
+
+type SafeUser = Omit<User, 'password'>;
+// { id: number; name: string }
+
+
+type Role = 'admin' | 'user';
+type RoleMap = Record<Role, number>;
+// { admin: number; user: number }
+
+
+type T = Exclude<'a' | 'b' | 'c', 'a'>;
+// 'b' | 'c'
+
+
+type T = Extract<'a' | 'b' | 'c', 'a' | 'f'>;
+// 'a'
+
+type T = NonNullable<string | null | undefined>;
+// string
+
+

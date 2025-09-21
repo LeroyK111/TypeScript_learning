@@ -147,3 +147,44 @@ const log: LogFn = (msg: string) => {
   console.log(msg);
 };
 
+
+
+function fetchUser() {
+  return { id: 1, name: 'Alice' };
+}
+
+type User = ReturnType<typeof fetchUser>;
+// { id: number; name: string }
+
+
+function greet(name: string, age: number) {}
+
+type Params = Parameters<typeof greet>;
+// [string, number]
+
+class Person {
+  constructor(name: string, age: number) {}
+}
+
+type Params = ConstructorParameters<typeof Person>;
+// [string, number]
+
+class Person {
+  name: string;
+  constructor(name: string) { this.name = name; }
+}
+
+type P = InstanceType<typeof Person>;
+// Person
+
+function say(this: { name: string }) { return this.name; }
+
+type T = ThisParameterType<typeof say>;
+// { name: string }
+
+
+function say(this: { name: string }) { return this.name; }
+
+type Fn = OmitThisParameter<typeof say>;
+// () => string
+

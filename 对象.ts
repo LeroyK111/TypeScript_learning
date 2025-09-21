@@ -60,3 +60,33 @@ type Name = 'Tom' | 'John' | 'Sim'
 type NameObj = {
   [T in Name]: string
 }
+
+
+interface User {
+  id: number;
+  name: string;
+  age: number;
+}
+
+type PartialUser = Partial<User>;
+// 等价于 { id?: number; name?: string; age?: number }
+
+
+interface Config {
+  url?: string;
+  cache?: boolean;
+}
+
+type StrictConfig = Required<Config>;
+// { url: string; cache: boolean }
+
+
+interface Point {
+  x: number;
+  y: number;
+}
+
+type ReadonlyPoint = Readonly<Point>;
+// { readonly x: number; readonly y: number }
+
+
